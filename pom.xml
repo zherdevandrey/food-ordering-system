@@ -25,6 +25,18 @@
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
+    </dependencies>
+
     <dependencyManagement>
         <!--ORDER SERVICE-->
         <dependencies>
@@ -72,10 +84,6 @@
 
         </dependencies>
     </dependencyManagement>
-
-    <dependencies>
-
-    </dependencies>
 
     <build>
         <plugins>
