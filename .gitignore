@@ -1,0 +1,9 @@
+# Project exclude paths
+/common/common-application/target/
+/common/common-domain/target/
+/order-service/order-application/target/
+/order-service/order-container/target/
+/order-service/order-data-access/target/
+/order-service/order-domain/order-application-service/target/
+/order-service/order-domain/order-core-domain/target/
+/order-service/order-messaging/target/
