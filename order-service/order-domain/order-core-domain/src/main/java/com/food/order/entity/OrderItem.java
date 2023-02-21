@@ -95,3 +95,4 @@ public class OrderItem extends BaseEntity<OrderItemId> {
             return new OrderItem(this);
         }
     }
+}
