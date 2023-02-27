@@ -3,6 +3,7 @@ package com.food.order.mapper;
 import com.food.order.dto.create.CreateOrderCommand;
 import com.food.order.dto.create.CreateOrderResponse;
 import com.food.order.dto.create.OrderAddress;
+import com.food.order.dto.track.TrackOrderResponse;
 import com.food.order.entity.Order;
 import com.food.order.entity.OrderItem;
 import com.food.order.entity.Product;
@@ -63,6 +64,15 @@ public class OrderDataMapper {
                 .orderTrackingId(order.getTrackingId().getValue())
                 .orderStatus(order.getStatus())
                 .message(null)
+                .build();
+    }
+
+    public TrackOrderResponse orderToTrackOrderResponse(Order order) {
+
+        return TrackOrderResponse.builder()
+                .orderTrackingId(order.getTrackingId().getValue())
+                .orderStatus(order.getStatus())
+                .failureMessages(order.getFailureMessages())
                 .build();
     }
 }
