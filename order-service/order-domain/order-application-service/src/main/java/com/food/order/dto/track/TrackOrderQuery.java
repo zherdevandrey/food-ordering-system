@@ -1,7 +1,7 @@
 package com.food.order.dto.track;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.UUID;
 
